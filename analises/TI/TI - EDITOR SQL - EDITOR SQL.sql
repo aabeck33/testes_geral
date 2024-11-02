@@ -1,0 +1,1 @@
+Select usr.idlogin as Login,  usr.iduser as Matricula, usr.nmuser as Name, ada.idgroup as adgroup from aduser usr  inner join ADUSERACCGROUP adg on adg.cduser = usr.cduser  inner join ADACCESSGROUP ada on adg.CDGROUP= ada.CDGROUP where  idgroup = 'TRE_EXE' and usr.fguserenabled=1
